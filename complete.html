@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Vé máy bay</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="./img/flying_stork1600.png" alt="Vé Máy Bay">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Trang Chủ <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Săn Vé Rẻ</a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main_body">
+            <div class="flight_title">
+                <div class="location">Điền Thông Tin</div>
+                <!--                <a class="btn edit_search" href="index.html">Thay đổi tìm kiếm</a>-->
+            </div>
+            <div class="contract_con container">
+                <div class="title">Thông tin liên hệ</div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="input-group">
+                            <select class="form-control" id="sel1">
+                                <option>Ông</option>
+                                <option>Bà</option>
+                                <option>Anh</option>
+                                <option>Chị</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Họ">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Họ đệm và tên">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="input_firstname">@</span>
+                            <input type="text" class="form-control" placeholder="Địa chỉ">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="input_firstname">@</span>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="input_firstname">@</span>
+                            <input type="text" class="form-control" placeholder="Số điện thoại" >
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="traveller_con container">
+                <div class="title">Thông tin hành khách</div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="input-group">
+                            <select class="form-control" id="sel1">
+                                <option>Ông</option>
+                                <option>Bà</option>
+                                <option>Anh</option>
+                                <option>Chị</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Họ">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Họ đệm và tên">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <select class="form-control" id="sel1">
+                                <option>0 Kg</option>
+                                <option>15 Kg</option>
+                                <option>20 Kg</option>
+                                <option>25 Kg</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="input-group">
+                            <select class="form-control" id="sel1">
+                                <option>Ông</option>
+                                <option>Bà</option>
+                                <option>Anh</option>
+                                <option>Chị</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Họ">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Họ đệm và tên">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <select class="form-control" id="sel1">
+                                <option>0 Kg</option>
+                                <option>15 Kg</option>
+                                <option>20 Kg</option>
+                                <option>25 Kg</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="payment_method_con container">
+                <div class="title">Phuong thức thanh toán</div>
+                <form>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked="true">Thanh toán tại phòng vé</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Thanh toán tại địa chỉ khách hàng</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Chuyển khoản qua ngân hàng</label>
+                    </div>
+                </form>
+                <div class="pm_store">
+                    <div>Quý khách vui lòng liên hệ địa chỉ văn phòng tại: <strong>796/132/4 Le Duc Tho, P.15, Q.Go Vap, TP Ho Chi Minh</strong></div>
+                    <div>Hotline: <strong>0938879113</strong></div>
+                </div>
+                <div class="pm_cus" style="display:none">
+                    <div>Chỉ áp dụng cho khách hàng thuộc nội thành TP Hồ Chí Minh</div>
+                </div>
+                <div class="pm_bank" style="display:none">
+                    <div>Danh sách ngân hàng:</div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="complete">
+                    <a class="btn continue" href="index.html">Hoàn tất</a>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="./img/flying_stork1600.png" alt="Vé Máy Bay">
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Ve may bay: 796/132/4 Le Duc Tho, P.15, Q.Go Vap, TP Ho Chi Minh </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a>Liên hệ với chúng tôi</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a>Chính sách bảo mật thông tin cá nhân</a></h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </body>
+
+</html>
