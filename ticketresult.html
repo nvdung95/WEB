@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Vé máy bay</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="./img/flying_stork1600.png" alt="Vé Máy Bay">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Trang Chủ <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Săn Vé Rẻ</a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main_body">
+            <div class="flight_title">
+                <div class="location">TP Hồ Chí Minh đến Hà Nội</div>
+                <a class="btn edit_search" href="index.html">Thay đổi tìm kiếm</a>
+                <div class="hanh_trinh container">
+                    <div>Khởi hành:</div>
+                    <div>TP Hồ Chí Minh đến Hà Nội - 12/10/2017</div>
+                </div>
+            </div>
+            <div class="container" id="list_dep_ticket">
+                <div class="ticket_item" price="1.000.000">
+                    <div class="ticket_info">
+                        <div class="name_air">Vietman Airline</div>
+                        <img class="airline_image" src="./img/flying_stork1600.png">
+                        <div class="from_city_code">SGN</div>
+                        <div class="dep_time">10:10</div>
+                        <i class="fa fa-fighter-jet to" aria-hidden="true"></i>
+                        <div class="to_city_code">HAN</div>
+                        <div class="dic_time">12:20</div>
+                        <div class="transit">Bay thẳng - 2hrs 10mins</div>
+                        <div class="detail">Chi tiết <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="price">1.000.000 <span>đ</span></div>
+                        <a class="btn btn_select">Chọn</a>
+                    </div>
+                    <div class="flight_info" style="display:none;">
+                        <div class="first_step">
+                            <div class="name_air">Vietman Airline</div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                        <div class="middle_step">
+                            <div class="name_air">Vietman Airline</div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                        <div class="last_step">
+                            <div class="name_air">Vietman Airline</div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket_item" price="1.000.000">
+                    <div class="ticket_info">
+                        <div class="name_air">Vietman Airline</div>
+                        <img class="airline_image" src="./img/flying_stork1600.png">
+                        <div class="from_city_code">SGN</div>
+                        <div class="dep_time">10:10</div>
+                        <i class="fa fa-fighter-jet to" aria-hidden="true"></i>
+                        <div class="to_city_code">HAN</div>
+                        <div class="dic_time">12:20</div>
+                        <div class="transit">Bay thẳng - 2hrs 10mins</div>
+                        <div class="detail" value="0">Chi tiết <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="price">1.000.000 <span>đ</span></div>
+                        <a class="btn btn_select">Chọn</a>
+                    </div>
+                    <div class="flight_info" style="display:none;">
+                        <div class="direct_flight">
+                            <div class="name_air">Hãng hàng không: <span>Vietman Airline</span></div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="flight_code">Chuyến bay: <span>VN 208</span></div>
+                            <div class="from_city">Hồ Chí Minh</div>
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city">Hà Nội</div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket_item" price="1.000.000">
+                    <div class="ticket_info">
+                        <div class="name_air">Vietman Airline</div>
+                        <img class="airline_image" src="./img/flying_stork1600.png">
+                        <div class="from_city_code">SGN</div>
+                        <div class="dep_time">10:10</div>
+                        <i class="fa fa-fighter-jet to" aria-hidden="true"></i>
+                        <div class="to_city_code">HAN</div>
+                        <div class="dic_time">12:20</div>
+                        <div class="transit">Bay thẳng - 2hrs 10mins</div>
+                        <div class="detail" value="0">Chi tiết <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="price">1.000.000 <span>đ</span></div>
+                        <a class="btn btn_select">Chọn</a>
+                    </div>
+                    <div class="flight_info" style="display:none;">
+                        <div class="direct_flight">
+                            <div class="name_air">Hãng hàng không: <span>Vietman Airline</span></div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="flight_code">Chuyến bay: <span>VN 208</span></div>
+                            <div class="from_city">Hồ Chí Minh</div>
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city">Hà Nội</div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket_item" price="1.000.000">
+                    <div class="ticket_info">
+                        <div class="name_air">Vietman Airline</div>
+                        <img class="airline_image" src="./img/flying_stork1600.png">
+                        <div class="from_city_code">SGN</div>
+                        <div class="dep_time">10:10</div>
+                        <i class="fa fa-fighter-jet to" aria-hidden="true"></i>
+                        <div class="to_city_code">HAN</div>
+                        <div class="dic_time">12:20</div>
+                        <div class="transit">Bay thẳng - 2hrs 10mins</div>
+                        <div class="detail" value="0">Chi tiết <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="price">1.000.000 <span>đ</span></div>
+                        <a class="btn btn_select">Chọn</a>
+                    </div>
+                    <div class="flight_info" style="display:none;">
+                        <div class="direct_flight">
+                            <div class="name_air">Hãng hàng không: <span>Vietman Airline</span></div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="flight_code">Chuyến bay: <span>VN 208</span></div>
+                            <div class="from_city">Hồ Chí Minh</div>
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city">Hà Nội</div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket_item" price="1.000.000">
+                    <div class="ticket_info">
+                        <div class="name_air">Vietman Airline</div>
+                        <img class="airline_image" src="./img/flying_stork1600.png">
+                        <div class="from_city_code">SGN</div>
+                        <div class="dep_time">10:10</div>
+                        <i class="fa fa-fighter-jet to" aria-hidden="true"></i>
+                        <div class="to_city_code">HAN</div>
+                        <div class="dic_time">12:20</div>
+                        <div class="transit">Bay thẳng - 2hrs 10mins</div>
+                        <div class="detail" value="0">Chi tiết <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="price">1.000.000 <span>đ</span></div>
+                        <a class="btn btn_select">Chọn</a>
+                    </div>
+                    <div class="flight_info" style="display:none;">
+                        <div class="direct_flight">
+                            <div class="name_air">Hãng hàng không: <span>Vietman Airline</span></div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="flight_code">Chuyến bay: <span>VN 208</span></div>
+                            <div class="from_city">Hồ Chí Minh</div>
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city">Hà Nội</div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket_item" price="1.000.000">
+                    <div class="ticket_info">
+                        <div class="name_air">Vietman Airline</div>
+                        <img class="airline_image" src="./img/flying_stork1600.png">
+                        <div class="from_city_code">SGN</div>
+                        <div class="dep_time">10:10</div>
+                        <i class="fa fa-fighter-jet to" aria-hidden="true"></i>
+                        <div class="to_city_code">HAN</div>
+                        <div class="dic_time">12:20</div>
+                        <div class="transit">Bay thẳng - 2hrs 10mins</div>
+                        <div class="detail" value="0">Chi tiết <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="price">1.000.000 <span>đ</span></div>
+                        <a class="btn btn_select">Chọn</a>
+                    </div>
+                    <div class="flight_info" style="display:none;">
+                        <div class="direct_flight">
+                            <div class="name_air">Hãng hàng không: <span>Vietman Airline</span></div>
+                            <img class="airline_image" src="./img/flying_stork1600.png">
+                            <div class="flight_code">Chuyến bay: <span>VN 208</span></div>
+                            <div class="from_city">Hồ Chí Minh</div>
+                            <div class="from_city_code">SGN</div>
+                            <div class="dep_time">10:10</div>
+                            <div class="dep_date">12/10/2017</div>
+                            <div class="chart"><div class="line"></div></div>
+                            <div class="to_city">Hà Nội</div>
+                            <div class="to_city_code">HAN</div>
+                            <div class="dic_time">12:20</div>
+                            <div class="ret_date">12/10/2017</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="dedail_and_total">
+                <div class="detail_cont"></div>
+                <div class="total_cont pull-right">
+                    <div class="total_price">0<span> đ</span></div>
+                    <a class="btn continue" href="complete.html">Tiếp tục</a>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $("#list_dep_ticket .ticket_item .ticket_info .detail").click(function(){
+                        if(parseInt($(this).attr("value"))){
+                            $(this).html('Chi tiết <i class="fa fa-angle-down" aria-hidden="true"></i>');
+                            $(this).attr("value",0);
+                        }else{
+                            $(this).html('Ẩn <i class="fa fa-angle-up" aria-hidden="true"></i>');
+                            $(this).attr("value",1);
+                        }
+                        $(this).parent().next(".flight_info").slideToggle(1000);
+                    });
+
+                    $("#list_dep_ticket .ticket_item .ticket_info .btn_select").click(function(){
+                        var list = $("#list_dep_ticket .ticket_item");
+                        
+                        if(parseInt($(this).attr('edit'))){                            
+                            $(this).parent().parent(".ticket_item").attr("select",0);
+                            $(".dedail_and_total .continue").attr('select',0);
+                            
+                            $(this).html('Chọn');
+                            $(this).css({"background-color": "white", "color": "red"});
+                            $(this).attr('edit',0);
+                            $(".dedail_and_total .total_price").html('0<span> đ</span>');
+                            
+                            for(var i = 0;i<list.length;i++){
+                                $(list[i]).fadeIn();
+                            }
+
+
+                        }else{                            
+                            $(this).parent().parent(".ticket_item").attr("select",1);
+                            $(this).html('Thay đổi');
+                            $(this).attr('edit',1);
+                            $(".dedail_and_total .total_price").html($(this).parent().parent(".ticket_item").attr('price')+'<span> đ</span>');
+                            $(".dedail_and_total .continue").attr('select',1);
+                            
+                            $(this).css({"background-color": "red", "color": "white"});
+                            for(var i = 0;i<list.length;i++){
+                                if(parseInt($(list[i]).attr("select"))){
+
+                                }else{
+                                    $(list[i]).fadeOut();
+                                }
+                            }
+                        }
+
+
+                    });
+                });
+            </script>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="./img/flying_stork1600.png" alt="Vé Máy Bay">
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Ve may bay: 796/132/4 Le Duc Tho, P.15, Q.Go Vap, TP Ho Chi Minh </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a>Liên hệ với chúng tôi</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a>Chính sách bảo mật thông tin cá nhân</a></h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
+
+    </body>
+
+</html>
